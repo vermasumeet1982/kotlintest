@@ -15,6 +15,21 @@ class MainActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.hello_world)
         textView.text = getString(R.string.hello_world, country.countryName)
         //todo: Add lambda function in Country and show it's usage
+
+        val country2 = Country("UK")
+
+        var message = ""
+        if(country == country2) {
+            message = "match"
+        } else {
+            message = "don't match"
+
+        }
+
+        val message2 = if(country == country2)  "match" else  "don't match"
+
+
+
     }
 }
 

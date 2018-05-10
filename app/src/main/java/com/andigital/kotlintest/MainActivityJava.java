@@ -21,5 +21,18 @@ public class MainActivityJava extends AppCompatActivity {
 
         textView.setText(getString(R.string.hello_world, country.getCountryName()));
 
+        final Country country2 = new Country("UK");
+
+        final String message;
+        if(country.equals(country2)) {
+            message = "match";
+        } else {
+            message ="don't match";
+
+        }
+
+        final String message2 = (country.equals(country2))  ? "match" :  "don't match";
+
+
     }
 }
